@@ -110,7 +110,7 @@ from sklearn.preprocessing import MinMaxScaler, QuantileTransformer
 from transformers import AutoTokenizer, AutoModel, logging
 logging.set_verbosity_error()
 # biobert_path = '../pretrained_models/bio_clinical_bert/biobert_pretrain_output_all_notes_150000/'
-biobert_path = 'pretrained_bert_tf/biobert_pretrain_output_all_notes_150000/'
+biobert_path = 'emilyalsentzer/Bio_ClinicalBERT'
 biobert_tokenizer = AutoTokenizer.from_pretrained(biobert_path)
 biobert_model = AutoModel.from_pretrained(biobert_path)
 # biobert_tokenizer = AutoTokenizer.from_pretrained("emilyalsentzer/Bio_ClinicalBERT")
